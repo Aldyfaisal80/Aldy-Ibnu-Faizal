@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  // padding: 10px;
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+  height: 100px;
+}
+.Title {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  margin: 40px 100px 0px 100px;
+}
+.Title-1 {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 25px 0px 0px 100px;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 20vh;
+  height: 50px;
+}
+.list-nav {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100vh;
+  height: 50px;
+  margin: 25px 100px 0px 100px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bolder;
+}
+article {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+.box-kiri {
+  width: 50%;
+  height: 50vh;
+  margin: 0px 100px 0px 100px;
+}
+.body-atas {
+  width: 50vh;
+  height: 200px;
+  font-size: 40px;
+}
+.body-bawah {
+  display: flex;
+  width: 70vh;
+  height: 50px;
+  margin-bottom: 40px;
+}
+.bawah-body {
+  display: flex;
+}
+.box-kiri-bawah {
+  width: 30vh;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 10px;
+}
+.lingkaran-kiri-bawah {
+  width: 10vh;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+}
+.bulat-kiri-bawah {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+.box-kanan {
+  width: 50%;
+  height: 400px;
+}
+.kotak-atas {
+  display: flex;
+  width: 100%;
+}
+.kotak-atas-kiri {
+  width: 30vh;
+  height: 230px;
+}
+.kotak-bawah {
+  background-color: grey;
+  width: 72vh;
+  height: 150px;
+  border-radius: 20px;
+}
+.kotak-atas1 {
+  background-color: grey;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.kotak-atas2 {
+  background-color: grey;
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+}
+.kotak-atas-kanan {
+  background-color: grey;
+  width: 300px;
+  height: 220px;
+  border-radius: 20px;
+}
+.bawah-footer {
+  width: 100%;
+  height: 23vh;
+  // border: 2px solid black;
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+}
+.kotak-list {
+  border: 2px solid grey;
+  border-radius: 20px 20px 0px 0px;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.list-view {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 200px;
+}
+.kotak-10years {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10vh;
+  height: 10vh;
+  margin-right: -180px;
+  // border: 2px solid grey;
+  border-radius: 50%;
+  margin-top: -10px;
+}

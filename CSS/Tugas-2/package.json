@@ -1,0 +1,12 @@
+{
+  "name": "Tugas-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tugas2": "sass ./src/sass/main.scss ./src/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
