@@ -1,0 +1,12 @@
+{
+  "name": "Tugas-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Tugas5": "sass ./src/sass/main.scss ./src/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
