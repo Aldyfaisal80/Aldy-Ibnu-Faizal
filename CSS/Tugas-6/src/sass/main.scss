@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    // background-color: red;
+
+    .navbar {
+        display: flex;
+    }
+
+    .nav-left {
+        display: flex;
+        border: 1px solid none;
+        margin: 10px 0px 0px 10px;
+        // padding: 10px;
+        // background-color: red;
+        // font-size: 10px;
+
+    }
+
+    input {
+        width: 30vh;
+        display: flex;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        padding-left: 10px;
+        margin-right: -20px;
+        border-bottom: 1px solid black;
+    }
+
+    .fa-magnifying-glass {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .nav-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 100vh;
+        margin: 20px 0px 0px 400px;
+        font-family: 'Arvo', serif;
+    }
+
+    .nav-right {
+        display: flex;
+        // background-color: blue;
+        // gap: 30px;
+        margin-left: 500px;
+        // flex-direction: row;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    li {
+        // display: flex
+        list-style: none;
+        // flex-direction: column;
+    }
+
+    .pembatas {
+        display: flex;
+        width: 3vh;
+        // height: 5vh;
+        border: solid;
+        border-style: dotted;
+        border-width: 5px 0px 5px 0px;
+    }
+
+    // class icon
+    .fa-heart {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .fa-bell {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .fa-bag-shopping {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .fa-ellipsis-vertical {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .img {
+        width: 5vh;
+        height: 6vh;
+        border-radius: 50%;
+        background-color: grey;
+        margin-top: 10px;
+    }
+
+}
+
+.list-menu {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    li {
+        list-style: none;
+
+    }
+}
+
+section {
+    .detail {
+        width: 100%;
+        display: flex;
+        .detail-kiri{
+            width: 50%;
+            height: 80vh;
+            .kiri-atas{
+
+                .left-img {
+                    margin: 60px 0px 0px 20px;
+
+                    .img1{
+
+                        img {
+                            width: 100vh;
+                            height: 55vh;
+                        }
+                    }
+                }
+                
+            }
+            .kiri-bawah{
+                display: flex;
+                .kiri-text{
+                    margin: 20px 0px 0px 20px;
+                    font-family: 'Arvo', serif;
+                    font-size: xx-large;
+                }
+                .kanan-text{
+                    margin: 20px 0px 0px 390px;
+                    font-family: 'Jost', sans-serif;
+                }
+            }
+        }
+        .detail-kanan{
+            width: 50%;
+            height: 80vh;
+
+            .kanan-atas{
+                
+                .teks-kanan{
+                    margin: 50px 0px 20px 20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: xx-large;
+                }
+                .button-kanan {
+                    margin-left: 20px;
+                    button {
+                        width: 15vh;
+                        height: 7vh;
+                        background-color: black;
+                        border: none;
+                        color: white;
+                        
+                    }
+                }
+            }
+            .kanan-bawah {
+                display: flex;
+                .right-img {
+                    display: flex;
+                    margin: 20px 0px 0px 20px;
+                    gap: 20px;
+                    img {
+                        width: 50vh;
+                        height: 55vh;
+
+                    }
+                }
+            }
+        }
+    }
+}

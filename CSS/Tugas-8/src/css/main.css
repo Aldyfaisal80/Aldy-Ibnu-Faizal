@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;1,6..12,200&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@300&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;1,6..12,200&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@200&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+section aside .title {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+section aside .title h1 {
+  margin-top: 5px;
+  font-size: 2rem;
+  font-family: "Arvo", serif;
+}
+section aside .title h1:nth-child(1) {
+  color: red;
+  font-style: italic;
+}
+section aside .title button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background: rgb(165, 14, 14);
+  background: linear-gradient(90deg, rgb(165, 14, 14) 2%, rgb(49, 3, 3) 94%);
+  font-family: "Arvo", serif;
+}
+section .list-table {
+  margin-top: 50px;
+}
+section .list-table table {
+  margin-top: 40px;
+  width: 200px;
+}
+section .list-table table td {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+section .list-table table a {
+  color: black;
+  text-decoration: none;
+}
+section .action .pembatas {
+  margin-top: 100px;
+  width: 30vh;
+  border-bottom: 2px solid gray;
+}
+section .action table {
+  margin-top: 40px;
+  width: 200px;
+}
+section .action table td {
+  padding-bottom: 20px;
+}
+section .action table a {
+  color: black;
+  text-decoration: none;
+}
+section main {
+  width: 75%;
+}
+section main nav {
+  display: flex;
+}
+section main nav .input {
+  width: 100%;
+}
+section main nav .input form {
+  width: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  gap: 10px;
+  background-color: rgb(239, 239, 239);
+}
+section main nav .input form select {
+  font-weight: bolder;
+  width: 15vh;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+section main nav .input form .search-box input {
+  width: 100vh;
+  height: 5vh;
+  border: none;
+  background-color: rgb(239, 239, 239);
+}
+section main nav .input form .icon-search button {
+  border: none;
+}
+section main .nav-icon {
+  width: 200px;
+  display: flex;
+  font-size: 20px;
+}
+section main .nav-icon ul {
+  display: flex;
+  margin-top: 20px;
+}
+section main .nav-icon li {
+  width: 10vh;
+  color: black;
+  list-style-type: none;
+}
+section main .nav-icon a {
+  color: black;
+  text-decoration: none;
+}
+section main .nav-icon img {
+  width: 7vh;
+  height: 7vh;
+  margin-top: -20px;
+  border-radius: 50%;
+}
+section .left-side {
+  background-color: lightgray;
+  display: flex;
+  width: 85%;
+  height: 220px;
+  margin-top: 20px;
+}
+section .left-side .img-left-side img {
+  width: 30vh;
+  height: 220px;
+}
+section .left-side .text-header {
+  width: 200px;
+  margin-left: 40px;
+}
+section .left-side .text-header p {
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section .left-side .text-header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section .left-side .text-header .brand {
+  display: flex;
+}
+section .left-side .text-header .brand .left-brand {
+  display: flex;
+  margin-top: 30px;
+}
+section .left-side .text-header .brand .left-brand ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-size: 5px;
+}
+section .left-side .text-header .brand .left-brand li {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 5px;
+}
+section .left-side .text-header .brand .left-brand img {
+  width: 25px;
+  height: 25px;
+}
+section .left-side .text-header .brand .left-brand button {
+  background-color: black;
+  width: 5vh;
+  height: 5vh;
+  margin-left: 500px;
+  margin-top: -8px;
+}
+section .left-side .right-side {
+  width: 30%;
+}
+section .left-side .right-side ul {
+  list-style-type: none;
+}
+section .left-side .right-side ul li img {
+  width: 30vh;
+  height: 220px;
+  margin-left: 500px;
+}
+section .toggle-product {
+  width: 170vh;
+  margin-top: 30px;
+  display: flex;
+}
+section .toggle-product .kiri-toggle {
+  display: flex;
+  width: 50%;
+  margin-right: 530px;
+}
+section .toggle-product .kiri-toggle .font1 {
+  margin-right: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+}
+section .toggle-product .kiri-toggle .font2 {
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: "Arvo", serif;
+}
+section .toggle-product .kiri-toggle .font2 button {
+  background-color: white;
+  width: 100px;
+  height: 20px;
+  border: none;
+}
+section .toggle-product .kiri-toggle .font2 a {
+  text-decoration: none;
+  border: none;
+  color: black;
+}
+section .toggle-product .kiri-toggle .font2 .kanan-toggle {
+  display: flex;
+  justify-content: space-evenly;
+}
+section section#product {
+  width: 170vh;
+  height: 365px;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+section section#product .product-warp {
+  padding: 10px;
+}
+section section#product .product-warp .card-list .card {
+  border: 1px solid lightgray;
+  width: 220px;
+  padding: 8px;
+}
+section section#product .product-warp .card-list .card .image {
+  position: relative;
+}
+section section#product .product-warp .card-list .card .image img {
+  background-color: lightgray;
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+section section#product .product-warp .card-list .card .text {
+  font-weight: 400;
+}
+section section#product .product-warp .card-list .card .price-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+  padding: 10px;
+}
+section section#product .product-warp .card-list .card .price-color .kotak-color1 {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+}
+section section#product .product-warp .card-list .card .price-color .kotak-color2 {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+section section#product .product-warp .card-list .card .price-color .kotak-color3 {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

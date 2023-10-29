@@ -1,0 +1,45 @@
+<main>
+            <nav>
+                <div class="input">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">All Category</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="button-search">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <div class="icon-list">
+                        <ul>
+                            <li><i class="fa-regular fa-bell"></i></li>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                            <li><i class="fa-regular fa-window-minimize fa-rotate-90"></i></li>
+                            <li><img src="/CSS/T8/public/assets/image/profile.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header>
+                <div class="left-content">
+                    <div class="img-content">
+                        <img src="/CSS/T8/public/assets/image/sneakers.webp" alt="">
+                    </div>
+                    <div class="img-text">
+                        <h4>Special Offers</h4><br>
+                        <h1><b>Men Shoes</b></h1>
+                        <p>Best Shoes Discount <b>35% OFF</b> On all Men Shoes!</p>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="/" alt="">
+                </div>
+            </header>
+        </main>
+    </section>

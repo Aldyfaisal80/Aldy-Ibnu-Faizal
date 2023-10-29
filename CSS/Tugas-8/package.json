@@ -1,0 +1,12 @@
+{
+  "name": "Tugas-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Tugas8": "sass ./src/sass/main.scss ./src/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
