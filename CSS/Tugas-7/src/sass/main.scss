@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Saira:wght@300&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Chakra+Petch&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+
+    .container {
+        padding: 25px;
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+
+            .left-nav {
+
+                h1 {
+                    font-family: 'Gabarito', sans-serif;
+                }
+            }
+
+            .mid-nav {
+                font-family: 'Saira', sans-serif;
+                font-weight: 600;
+
+                ul {
+                    gap: 30px;
+                    display: flex;
+                    list-style-type: none;
+
+                    // flex-direction: row;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+
+                    form {
+                        select {
+                            font-size: 15px;
+                            font-weight: 600;
+                            font-family: 'Gabarito', sans-serif;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .right-nav {
+                display: flex;
+                gap: 40px;
+                font-family: 'Saira', sans-serif;
+
+                .log-in {
+                    font-weight: bolder;
+                }
+
+                .request {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 40px;
+                    margin-top: -8px;
+                    color: white;
+                    width: 20vh;
+                    height: 6vh;
+                    background-color: rgb(30, 210, 234);
+
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 87vh;
+    margin-bottom: 10px;
+
+    .left-main {
+        width: 50%;
+        height: 100%;
+        padding: 30px;
+
+        .left-top {
+
+
+           p img {
+                width: 100px;
+                height: 40px;
+                border-radius: 40px;
+                margin-right: 15px;
+
+            }
+
+            p {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 50px;
+                font-weight: bold;
+
+                a {
+                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 15px;
+                    position: relative;
+                    bottom: 8px;
+                    margin-left: 6px;
+                    border: 1px solid black;
+                    border-radius: 5vh;
+                    padding: 10px 15px;
+
+                    i {
+                        font-size: 20px;
+                        margin-right: 10px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+
+            }
+
+        }
+
+        .warp-left-bottom {
+            margin-top: 20px;
+            display: flex;
+            .left-bottom {
+                display: flex;
+                width: 50%;
+                height: 10vh;
+                gap: 20px;
+
+                .content1 {
+                    display: flex;
+                    border: 1px solid lightskyblue;
+                    width: 20vh;
+                    height: 5vh;
+                    border-radius: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    background-color: lightskyblue;
+                    color: white;
+                }
+
+                .content2 {
+                    
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .text-bottom-body {
+            margin-top: 10px
+        }
+       .footer-warp {
+        display: flex;
+        gap: 90px;
+        margin-top: 40px;
+
+        .footer-brand {
+            display: flex;
+            justify-content: space-around;
+            width: 20dvh;
+        }
+       }
+    }
+
+    .right-main {
+        width: 50%;
+        height: 87vh;
+        // background-color: red;
+
+        .right-top {
+            display: flex;
+            width: 102vh;
+            height: 40vh;
+            border-radius: 40px;
+            background-image: url(../../public/assets/image/2.jpg);
+            
+            .right-body {
+                margin: 30px 0px 0px 20px;
+
+            }
+
+            h1 {
+                font-family: 'Chakra Petch', sans-serif;
+                // padding: 20px;
+
+            }
+
+            .left-bottom-content {
+                // padding: 20px;
+                display: flex;
+                .left-content {
+                    margin-top: 20px;
+                }
+                
+            }
+
+            .right-content {
+                
+                .fa-arrow-right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    width: 8vh;
+                    height: 8vh;
+                    background-color: white;
+                    margin: 20px 0px 0px 350px;
+                }
+            }
+        }
+
+        .right-bottom {
+            display: flex;
+            margin-top: 15px;
+            .card-left-bottom {
+                width: 50vh;
+                height: 45vh;
+                border-radius: 30px;
+                background-image: url(../../public/assets/image/3.jpg);
+
+                .nav-body {
+                    display: flex;
+                    margin: 20px 0px 0px 20px;
+                }
+                .nav-left1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 15vh;
+                    height: 6vh;
+                    background-color: white;
+                    margin-left: 20px;
+                    border-radius: 30px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                .nav-left2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 6vh;
+                    height: 6vh;
+                    border-radius: 50%;
+                    background-color: white;
+                    margin-left: 90px;
+                }
+
+                .body-text-mid {
+                    display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    margin: 50px 0px 0px 40px;
+                    font-size: 900px;
+                    color: white;
+                    font-family: 'Chakra Petch', sans-serif;
+                    font-size: xx-large;
+                }
+                .body-text-bottom {
+                    font-family: 'Chakra Petch', sans-serif;
+                    color: white;
+                    margin: 20px 0px 0px 40px;
+                }
+               
+            }
+
+            .card-right-bottom {
+                width: 50vh;
+                height: 45vh;
+                margin-left: 10px;
+                border-radius: 30px;
+                background-image: url(../../public/assets/image/3.jpg);
+
+                .nav-body {
+                    display: flex;
+                    margin: 20px 0px 0px 20px;
+                }
+                .nav-right1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 15vh;
+                    height: 6vh;
+                    background-color: white;
+                    margin-left: 20px;
+                    border-radius: 30px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                .nav-right2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 6vh;
+                    height: 6vh;
+                    background-color: white;
+                    margin-left: 20px;
+                    border-radius: 30px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                .body-text-mid {
+                    display: flex;
+                    margin: 10px 0px 0px 40px;
+                    font-size: 100px;
+                    color: white;
+                    
+                }
+                .body-text-bottom {
+                    font-family: 'Chakra Petch', sans-serif;
+                    color: white;
+                    margin: 20px 0px 0px 40px;
+                }
+               
+            }
+        }
+    }
+
+}

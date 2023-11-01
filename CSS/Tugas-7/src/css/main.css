@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Saira:wght@300&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Chakra+Petch&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav .container {
+  padding: 25px;
+}
+nav .container .nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .nav-bar .left-nav h1 {
+  font-family: "Gabarito", sans-serif;
+}
+nav .container .nav-bar .mid-nav {
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+}
+nav .container .nav-bar .mid-nav ul {
+  gap: 30px;
+  display: flex;
+  list-style-type: none;
+}
+nav .container .nav-bar .mid-nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .container .nav-bar .mid-nav ul form select {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Gabarito", sans-serif;
+  border: none;
+}
+nav .container .nav-bar .right-nav {
+  display: flex;
+  gap: 40px;
+  font-family: "Saira", sans-serif;
+}
+nav .container .nav-bar .right-nav .log-in {
+  font-weight: bolder;
+}
+nav .container .nav-bar .right-nav .request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-top: -8px;
+  color: white;
+  width: 20vh;
+  height: 6vh;
+  background-color: rgb(30, 210, 234);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 87vh;
+  margin-bottom: 10px;
+}
+main .left-main {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+}
+main .left-main .left-top p img {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+main .left-main .left-top p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+main .left-main .left-top p a {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: 8px;
+  margin-left: 6px;
+  border: 1px solid black;
+  border-radius: 5vh;
+  padding: 10px 15px;
+}
+main .left-main .left-top p a i {
+  font-size: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+main .left-main .warp-left-bottom {
+  margin-top: 20px;
+  display: flex;
+}
+main .left-main .warp-left-bottom .left-bottom {
+  display: flex;
+  width: 50%;
+  height: 10vh;
+  gap: 20px;
+}
+main .left-main .warp-left-bottom .left-bottom .content1 {
+  display: flex;
+  border: 1px solid lightskyblue;
+  width: 20vh;
+  height: 5vh;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: lightskyblue;
+  color: white;
+}
+main .left-main .warp-left-bottom .left-bottom .content2 {
+  margin-top: 5px;
+}
+main .left-main .text-bottom-body {
+  margin-top: 10px;
+}
+main .left-main .footer-warp {
+  display: flex;
+  gap: 90px;
+  margin-top: 40px;
+}
+main .left-main .footer-warp .footer-brand {
+  display: flex;
+  justify-content: space-around;
+  width: 20dvh;
+}
+main .right-main {
+  width: 50%;
+  height: 87vh;
+}
+main .right-main .right-top {
+  display: flex;
+  width: 102vh;
+  height: 40vh;
+  border-radius: 40px;
+  background-image: url(../../public/assets/image/2.jpg);
+}
+main .right-main .right-top .right-body {
+  margin: 30px 0px 0px 20px;
+}
+main .right-main .right-top h1 {
+  font-family: "Chakra Petch", sans-serif;
+}
+main .right-main .right-top .left-bottom-content {
+  display: flex;
+}
+main .right-main .right-top .left-bottom-content .left-content {
+  margin-top: 20px;
+}
+main .right-main .right-top .right-content .fa-arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 8vh;
+  height: 8vh;
+  background-color: white;
+  margin: 20px 0px 0px 350px;
+}
+main .right-main .right-bottom {
+  display: flex;
+  margin-top: 15px;
+}
+main .right-main .right-bottom .card-left-bottom {
+  width: 50vh;
+  height: 45vh;
+  border-radius: 30px;
+  background-image: url(../../public/assets/image/3.jpg);
+}
+main .right-main .right-bottom .card-left-bottom .nav-body {
+  display: flex;
+  margin: 20px 0px 0px 20px;
+}
+main .right-main .right-bottom .card-left-bottom .nav-left1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vh;
+  height: 6vh;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .right-main .right-bottom .card-left-bottom .nav-left2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 90px;
+}
+main .right-main .right-bottom .card-left-bottom .body-text-mid {
+  display: flex;
+  margin: 50px 0px 0px 40px;
+  font-size: 900px;
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: xx-large;
+}
+main .right-main .right-bottom .card-left-bottom .body-text-bottom {
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  margin: 20px 0px 0px 40px;
+}
+main .right-main .right-bottom .card-right-bottom {
+  width: 50vh;
+  height: 45vh;
+  margin-left: 10px;
+  border-radius: 30px;
+  background-image: url(../../public/assets/image/3.jpg);
+}
+main .right-main .right-bottom .card-right-bottom .nav-body {
+  display: flex;
+  margin: 20px 0px 0px 20px;
+}
+main .right-main .right-bottom .card-right-bottom .nav-right1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vh;
+  height: 6vh;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .right-main .right-bottom .card-right-bottom .nav-right2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  height: 6vh;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .right-main .right-bottom .card-right-bottom .body-text-mid {
+  display: flex;
+  margin: 10px 0px 0px 40px;
+  font-size: 100px;
+  color: white;
+}
+main .right-main .right-bottom .card-right-bottom .body-text-bottom {
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  margin: 20px 0px 0px 40px;
+}
+
+/*# sourceMappingURL=main.css.map */
