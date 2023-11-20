@@ -1,0 +1,895 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Chakra+Petch&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Patua+One&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Chakra+Petch&family=Comfortaa&family=Gabarito&family=Inter:wght@200&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Patua+One&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Chakra+Petch&family=Comfortaa&family=Gabarito&family=Inter:wght@200&family=Josefin+Sans:wght@600&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Patua+One&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Chakra+Petch&family=Comfortaa&family=Gabarito&family=Inter:wght@200&family=Josefin+Sans:wght@600&family=Jost:wght@500&family=Montserrat:ital,wght@0,700;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;1,6..12,200&family=Open+Sans:ital,wght@1,300&family=Patua+One&family=Red+Hat+Display&family=Saira:wght@300&family=Titillium+Web&family=Ubuntu:wght@500&family=Urbanist:ital,wght@1,300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$font-Comfortaa: "Comfortaa", sans-serif;
+$font-Red-hat: "Red Hat Display", sans-serif;
+
+// Color Variable
+$primary-gray: #edeef9;
+$primary-yellow: #f3d661;
+$primary-orange: #eb6003;
+$primary-green: #7ce499;
+$primary-pink: #f4e6ff;
+$primary-purple: #817bf5;
+$primary-beige: #febc99;
+$primary-blue: #0277ff;
+$secondary-blue: #2884ff;
+$secondary-green: #c9ecd8;
+$secondary-purple: #cfc2ff;
+$secondary-gray: rgb(78, 78, 78);
+$third-blue: #68eaea;
+$fourth-blue: #cee3ff;
+
+body {
+    background-color: $primary-gray;
+}
+
+section#nav-aside {
+    width: 100%;
+    display: flex;
+    // border-radius: 40px;
+
+    aside {
+
+        .title {
+            width: 15vh;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            h1 {
+                font-size: 50px;
+                font-family: "Patua One", serif;
+            }
+        }
+
+        .list-table {
+            font: {
+                family: $font-Comfortaa;
+                size: 12px;
+            }
+
+            nav {
+                width: 15vh;
+                height: 80vh;
+                display: flex;
+                font-weight: 900;
+
+                table {
+                    width: 15vh;
+
+                    .list-hover {
+                        font-size: 20px;
+                        width: 7vh;
+                        height: 7vh;
+                        border-radius: 50%;
+                    }
+
+                    tr {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        // margin-top: 10px;
+
+                        td {
+                            // margin-bottom: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+
+                            font: {
+                                size: 12px;
+                            }
+
+                            &:hover:nth-child(1) {
+                                background-color: $secondary-blue;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .action {
+            // width: 15vh;
+            // position: relative;
+            // bottom: 15px;
+            // display: flex;
+
+            font: {
+                family: $font-Comfortaa;
+            }
+
+            table {
+                width: 15vh;
+
+                .list-hover {
+                    font-size: 20px;
+                    width: 7vh;
+                    height: 7vh;
+                    border-radius: 50%;
+                }
+
+                tr {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    // margin-top: 10px;
+
+                    td {
+                        // margin-bottom: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+
+                        &:hover:nth-child(1) {
+                            width: 7vh;
+                            height: 7vh;
+                            border-radius: 50%;
+                            background-color: deepskyblue;
+                            font-size: 20px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+header#nav-icon {
+    .warp-main-nav {
+        background-color: $primary-gray;
+        display: flex;
+        width: 1415px;
+        height: 70px;
+
+        font: {
+            family: $font-Comfortaa;
+        }
+
+        .pembatas {
+            margin-top: 15px;
+            width: 0px;
+            height: 5vh;
+            border: 1px solid black;
+        }
+
+        .main-nav-left {
+            width: 50%;
+            height: 9vh;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .products {
+                margin-left: 40px;
+
+                &:hover {
+                    font-weight: bolder;
+                }
+            }
+
+            .selected {
+                &:hover {
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .main-nav-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 9vh;
+            gap: 40px;
+            margin-left: 600px;
+
+            .order {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 10px;
+                width: 15vh;
+                height: 6vh;
+                background-color: rgb(0, 110, 255);
+                color: white;
+            }
+
+            .icon1 {
+                font-size: 20px;
+            }
+
+            .icon2 {
+                font-size: 20px;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: burlywood;
+                width: 7vh;
+                height: 7vh;
+                border-radius: 50%;
+                border: 1px solid burlywood;
+                font-size: 20px;
+                // margin-left: 20px;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+
+    .warp-main-content {
+        width: 100%;
+        height: 125vh;
+        background-color: white;
+        border-radius: 40px;
+
+        .main-content-atas {
+            display: flex;
+            margin: 30px 0px 0px 30px;
+
+            .box-left-main-content-atas {
+                display: flex;
+                width: 130vh;
+                height: 350px;
+                border-radius: 20px;
+                background-color: $primary-yellow;
+                position: relative;
+
+                .warp-box-left-main-content-atas {
+                    .left-inside-content {
+                        width: 300px;
+                        height: 220px;
+                        margin: 30px 0px 0px 20px;
+                        // height: 100px;
+                        // background-color: beige;
+
+                        .title {
+                            h1 {
+                                font-size: 50px;
+                                font-family: $font-Red-hat;
+                            }
+                        }
+
+                        .description {
+                            width: 40vh;
+                            height: 150px;
+                            background-color: white;
+                            border-radius: 20px;
+                            margin-top: 15px;
+
+                            .title-description {
+                                span {
+                                    display: inline-block;
+                                    margin: 20px 0px 0px 20px;
+                                    font-weight: bolder;
+                                    font-size: 20px;
+                                    font-family: $font-Comfortaa;
+                                }
+                            }
+
+                            .price-description {
+                                span {
+                                    display: inline-block;
+                                    margin: 20px 0px 0px 20px;
+                                    font-family: $font-Comfortaa;
+
+                                    s {
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+
+                            .box-footer {
+                                display: flex;
+                                margin: 20px 0px 0px 20px;
+
+                                .left-box-footer {
+                                    .box-colors {
+                                        display: flex;
+                                        width: 60px;
+                                        height: 30px;
+                                        border-radius: 20px;
+                                        background-color: $fourth-blue;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-family: $font-Red-hat;
+                                        font-weight: 500;
+                                        // background-color: $secondary-blue;
+
+                                        font {
+                                            color: $primary-blue;
+                                            $font-Red-hat: "Red Hat Display", sans-serif;
+                                        }
+                                    }
+                                }
+
+                                .right-box-footer {
+                                    display: flex;
+                                    margin: 10px 0px 0px 100px;
+                                    gap: 5px;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    .colors-black {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background-color: black;
+
+                                        &:hover {
+                                            width: 20px;
+                                            height: 20px;
+                                            color: black;
+                                        }
+                                    }
+
+                                    .colors-red {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background-color: red;
+
+                                        &:hover {
+                                            width: 20px;
+                                            height: 20px;
+                                            color: red;
+                                        }
+                                    }
+
+                                    .colors-orange {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background-color: orange;
+
+                                        &:hover {
+                                            width: 20px;
+                                            height: 20px;
+                                            color: orange;
+                                        }
+                                    }
+
+                                    .colors-yellow {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background-color: yellow;
+
+                                        &:hover {
+                                            width: 20px;
+                                            height: 20px;
+                                            color: yellow;
+                                        }
+                                    }
+
+                                    .colors-green {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                        background-color: green;
+
+                                        &:hover {
+                                            width: 20px;
+                                            height: 20px;
+                                            color: green;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right-inside-content {
+                        display: flex;
+                        position: relative;
+                        bottom: 0;
+                        margin-top: 100px;
+
+                        .new {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $primary-orange;
+                            width: 100px;
+                            height: 50px;
+                            border-radius: 0px 20px 0px 20px;
+                            color: white;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            z-index: 1;
+                        }
+
+                        .hot {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $primary-blue;
+                            width: 100px;
+                            height: 50px;
+                            border-radius: 0px 20px 0px 20px;
+                            color: white;
+                            position: absolute;
+                            bottom: 0;
+                            left: 80px;
+                        }
+                    }
+                }
+
+                .warp-box-middle-main-content-atas {
+                    .img-big-shoes {
+                        rotate: -30deg;
+                        position: absolute;
+                        top: -20px;
+                        left: 250px;
+
+                        img {
+                            width: 80vh;
+                        }
+                    }
+                }
+
+                .warp-box-right-main-content-atas {
+                    position: absolute;
+                    bottom: 30px;
+                    right: -20px;
+                    rotate: -30deg;
+
+                    p {
+                        font-size: 70px;
+                        font-weight: bold;
+                        font-family: $font-Comfortaa;
+                    }
+                }
+            }
+
+            .warp-box-chart {
+                width: 60vh;
+                height: 350px;
+                margin-left: 30px;
+                border-radius: 20px;
+                background-color: $third-blue;
+                display: flex;
+                position: relative;
+
+                .left-box-chart {
+                    margin: 20px 0px 0px 20px;
+
+                    .box-unggu {
+                        background-color: $secondary-purple;
+                        width: 20px;
+                        height: 30px;
+
+                        .nav-chart {
+                            display: flex;
+                            margin-left: 40px;
+
+                            .title {
+                                p {
+                                    font-family: $font-Comfortaa;
+                                    width: 120px;
+                                    margin-top: 10px;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .border-day {
+                                width: 100px;
+                                // height: 40px;
+                                margin-left: 30px;
+
+                                select {
+                                    padding: 5px;
+                                    border: 1px solid white;
+                                    border-radius: 10px;
+                                    width: 20vh;
+                                    height: 40px;
+                                    outline: none;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+
+                    .warp-number-chart {
+                        ul {
+                            display: flex;
+                            margin-top: 20px;
+                            flex-direction: column;
+                            gap: 25px;
+
+                            li {
+                                list-style-type: none;
+                                font-family: $font-Comfortaa;
+                            }
+                        }
+                    }
+                }
+
+                .bottom-number-chart {
+                    display: flex;
+                    // flex-direction: row;
+                    position: relative;
+                    gap: 30px;
+                    bottom: 15px;
+                    left: 40px;
+                    justify-content: space-around;
+                    font-family: $font-Comfortaa;
+
+                    .number-color {
+                        &::before {
+                            content: "";
+                            display: flex;
+                            margin-bottom: -35px;
+                        }
+                    }
+
+                    .color22 {
+                        display: flex;
+                        height: 200px;
+                        position: absolute;
+                        bottom: 35px;
+                        flex-direction: column-reverse;
+                        background-color: $primary-purple;
+                    }
+
+                    .color23 {
+                        display: flex;
+                        height: 170px;
+                        position: absolute;
+                        bottom: 35px;
+                        left: 35px;
+                        flex-direction: column-reverse;
+                        background-color: $primary-beige;
+                    }
+
+                    .color24 {
+                        display: flex;
+                        height: 235px;
+                        position: absolute;
+                        bottom: 35px;
+                        left: 80px;
+                        flex-direction: column-reverse;
+                        background-color: $primary-blue;
+                    }
+
+                    .color25 {
+                        display: flex;
+                        height: 150px;
+                        position: absolute;
+                        bottom: 35px;
+                        left: 130px;
+                        flex-direction: column-reverse;
+                        background-color: $secondary-blue;
+                    }
+
+                    .color26 {
+                        display: flex;
+                        height: 195px;
+                        position: absolute;
+                        bottom: 35px;
+                        left: 180px;
+                        flex-direction: column-reverse;
+                        background-color: $primary-purple;
+                    }
+
+                    .color27 {
+                        display: flex;
+                        height: 100px;
+                        position: absolute;
+                        bottom: 35px;
+                        left: 230px;
+                        flex-direction: column-reverse;
+                        background-color: $primary-beige;
+                    }
+
+                    .color28 {
+                        display: flex;
+                        height: 160px;
+                        position: absolute;
+                        bottom: 35px;
+                        left: 280px;
+                        flex-direction: column-reverse;
+                        background-color: $primary-green;
+                    }
+                }
+            }
+        }
+
+        .warp-footer-content {
+            display: flex;
+
+            .left-footer-bawah {
+                margin-top: 20px;
+
+                .description-nav {
+                    display: flex;
+
+                    .left-nav {
+                        width: 500px;
+                        height: 40px;
+
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            font-family: $font-Red-hat;
+                            gap: 20px;
+
+                            &::before {
+                                content: "";
+                                width: 13px;
+                                height: 35px;
+                                display: flex;
+                                background-color: $primary-green;
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+
+                    .right-nav {
+                        display: flex;
+                        width: 500px;
+                        height: 40px;
+                        // gap: 70px;
+                        font-family: $font-Red-hat;
+
+                        .border-day {
+                            width: 20px;
+                            height: 40px;
+                            margin-left: 200px;
+
+                            select {
+                                padding: 5px;
+                                border: 1px solid white;
+                                border-radius: 10px;
+                                width: 20vh;
+                                height: 40px;
+                                outline: none;
+                                border: 1px solid black;
+                            }
+                        }
+
+                        .box-new-post {
+                            display: flex;
+                            width: 100px;
+                            height: 40px;
+                            border: 1px solid black;
+                            border-radius: 10px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $primary-blue;
+                            color: white;
+                            margin-left: 150px;
+                        }
+                    }
+                }
+
+                section#product {
+                    display: flex;
+                    overflow-y: hidden;
+                    overflow-x: scroll;
+                    width: 1100px;
+                    height: 420px;
+
+                    .product-warp {
+                        position: relative;
+                        font-family: $font-Comfortaa ;
+
+                        .card-list {
+                            padding: 20px;
+
+                            .card {
+                                width: 230px;
+                                height: 370px;
+
+                                .warp-img {
+                                    position: absolute;
+                                    width: 230px;
+                                    height: 250px;
+                                    border-radius: 20px;
+                                    aspect-ratio: 3/2;
+                                    background-color: $primary-green;
+                                    .hot {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: $primary-blue;
+                                        width: 100px;
+                                        height: 50px;
+                                        border-radius: 20px 0px 20px 0px;
+                                        color: white;
+                                        position: absolute;
+                                        left: 0;
+                                    }
+                                    .new {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: $primary-orange;
+                                        width: 100px;
+                                        height: 50px;
+                                        border-radius: 20px 0px 20px 0px;
+                                        color: white;
+                                        position: absolute;
+                                        right: 50px;
+                                    }
+                                    img {
+                                        position: absolute;
+                                        top: 60px;
+                                        right: 20px;
+                                        width: 220px;
+                                        rotate: -30deg;
+                                    }
+                                }
+
+                                .description {
+                                    position: absolute;
+                                    bottom: 40px;
+
+                                    .price {
+                                        p {
+                                            margin-top: 10px;
+
+                                            span {
+                                                color: $primary-orange;
+
+                                                s {
+                                                    margin-left: 20px;
+                                                    color: black;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .warp-colors {
+                                        position: relative;
+                                        margin-top: 20px;
+                                        display: flex;
+                                        background-color: red;
+
+                                        .box-colors {
+                                            display: flex;
+                                            position: absolute;
+                                            width: 60px;
+                                            height: 30px;
+                                            border-radius: 20px;
+                                            background-color: $fourth-blue;
+                                            align-items: center;
+                                            justify-content: center;
+                                            font-family: $font-Red-hat;
+                                            font-weight: 500;
+                                            left: 0px;
+                                        }
+
+                                        .color {
+                                            display: flex;
+                                            width: 100px;
+                                            position: absolute;
+                                            left: 110px;
+                                            gap: 20px;
+
+                                            .color1 {
+                                                width: 10px;
+                                                height: 10px;
+                                                border-radius: 50%;
+                                                background-color: black;
+                                            }
+
+                                            .color2 {
+                                                width: 10px;
+                                                height: 10px;
+                                                border-radius: 50%;
+                                                background-color: red;
+                                            }
+
+                                            .color3 {
+                                                width: 10px;
+                                                height: 10px;
+                                                border-radius: 50%;
+                                                background-color: orange;
+                                            }
+
+
+                                            .color4 {
+                                                width: 10px;
+                                                height: 10px;
+                                                border-radius: 50%;
+                                                background-color: yellow;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-footer-bawah {
+                width: 250px;
+                height: 500px;
+                // background-color: red;
+                margin: 20px 0 0 50px;
+
+                .icon-user {
+                    display: flex;
+                    width: 70px;
+                    height: 70px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: $primary-green;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    font-family: $font-Red-hat;
+
+                    p {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+
+                    h1 {
+                        font-size: 60px;
+                    }
+
+                    .hijau {
+                        color: $primary-green;
+                    }
+
+                    .icon-arrow {
+                        display: flex;
+                        width: 70px;
+                        height: 70px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: $primary-green;
+                        margin: 20px 0 0 0;
+
+                        img {
+                            width: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

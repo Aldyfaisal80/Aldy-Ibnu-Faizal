@@ -1,0 +1,11 @@
+{
+  "name": "tugas-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tugas9": "sass ./src/sass/main.scss ./src/css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
