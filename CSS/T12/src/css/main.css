@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@600&family=Roboto:wght@700&family=Sarabun:wght@100;200;300;400;500;600&family=Titillium+Web:wght@400;600&family=Yantramanav:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 40px;
+}
+.container header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.container header .left {
+  width: 20%;
+  display: flex;
+}
+.container header .left h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: bolder;
+}
+.container .list-nav {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 70px;
+}
+.container .list-nav ul {
+  display: flex;
+  gap: 40px;
+}
+.container .list-nav ul li {
+  list-style: none;
+}
+.container .list-nav a {
+  text-decoration: none;
+  color: black;
+}
+.container .right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.container .right .icon {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .right .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(91, 142, 165);
+  color: white;
+}
+.container section#first-vh {
+  display: flex;
+}
+.container section#first-vh .left h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  margin-top: 60px;
+}
+.container section#first-vh .left h1 span {
+  color: deepskyblue;
+}
+.container section#first-vh .left p {
+  font-family: "Sarabun", sans-serif;
+  margin-top: 40px;
+}
+.container section#first-vh .left .box-warp {
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+}
+.container section#first-vh .left .box-warp .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+}
+.container section#first-vh .left .box-warp .box1 {
+  color: white;
+  background-color: rgb(91, 142, 165);
+}
+.container section#first-vh .left .box-warp .box2 {
+  border: 3px solid rgb(91, 142, 165);
+}
+.container section#first-vh .right {
+  display: flex;
+  margin-left: 440px;
+}
+.container section#first-vh .right img {
+  width: 500px;
+  height: 500px;
+}
+.container section#second-vh {
+  width: 100%;
+  height: 150vh;
+  margin-top: 70px;
+}
+.container section#second-vh h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Titillium Web", sans-serif;
+}
+.container section#second-vh .title {
+  text-align: center;
+  font-family: "Sarabun", sans-serif;
+}
+.container section#second-vh .list-card {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.container section#second-vh .list-card .first-card {
+  box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+  -webkit-box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+  -moz-box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+}
+.container section#second-vh .list-card .first-card .product {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  font-family: "Sarabun", sans-serif;
+}
+.container section#second-vh .list-card .first-card .product1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section#second-vh .list-card .first-card .product1 .fa-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 40px;
+}
+.container section#second-vh .list-card .first-card .product1 #img-product1 {
+  position: absolute;
+  width: 210px;
+  height: 180px;
+}
+.container section#second-vh .list-card .first-card .product1 #img-product2 {
+  position: absolute;
+  top: -20px;
+  width: 250px;
+  height: 250px;
+}
+.container section#second-vh .list-card .first-card .product1 #img-product3 {
+  position: absolute;
+  top: -20px;
+  width: 270px;
+  height: 250px;
+}
+.container section#second-vh .list-card .first-card .product1 #img-product4 {
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+}
+.container section#second-vh .list-card .first-card .product1 #img-product5 {
+  position: absolute;
+  top: -20px;
+  width: 250px;
+  height: 250px;
+}
+.container section#second-vh .list-card .first-card .product1 #img-product6 {
+  position: absolute;
+  top: -10px;
+  width: 250px;
+  height: 210px;
+}
+.container section#second-vh .list-card .first-card .product1 img {
+  position: absolute;
+  top: 10px;
+  width: 250px;
+  height: 250px;
+  pointer-events: none;
+}
+.container section#second-vh .list-card .first-card .product1 .description-card {
+  position: absolute;
+  bottom: 90px;
+}
+.container section#second-vh .list-card .first-card .product1 .description-card h3 {
+  text-align: center;
+  font-family: "Sarabun", sans-serif;
+}
+.container section#second-vh .list-card .first-card .product1 .description-card p {
+  font-size: 14px;
+}
+.container section#second-vh .list-card .first-card .product1 .description-card .fa-star {
+  color: yellow;
+}
+.container section#second-vh .list-card .first-card .product1 .description-box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+}
+.container section#second-vh .list-card .first-card .product1 .description-box .description-text {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  bottom: 10px;
+}
+.container section#second-vh .list-card .first-card .product1 .description-box .description-text .left {
+  position: absolute;
+  left: 20px;
+}
+.container section#second-vh .list-card .first-card .product1 .description-box .description-text .left p {
+  color: deepskyblue;
+  font-size: larger;
+  font-weight: bolder;
+}
+.container section#second-vh .list-card .first-card .product1 .description-box .description-text .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  right: 20px;
+  background: rgb(91, 142, 165);
+  border-radius: 10px;
+  color: white;
+  gap: 10px;
+}
+.container section#categories {
+  width: 100%;
+  height: 130vh;
+}
+.container section#categories .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0 0 620px;
+  font-size: 25px;
+  width: 200px;
+  height: 50px;
+  gap: 30px;
+  color: deepskyblue;
+  font-family: "Sarabun", sans-serif;
+  border: 3px solid rgb(91, 142, 165);
+  border-radius: 10px;
+}
+.container section#categories .see-more {
+  margin-top: 40px;
+}
+.container section#categories .p-categories {
+  margin-bottom: 40px;
+}
+.container section#categories h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 60px;
+}
+.container section#categories p {
+  font-family: "Sarabun", sans-serif;
+}
+.container section#categories .product-warp {
+  display: flex;
+  gap: 6px;
+}
+.container section#categories .product-warp .card {
+  width: 200px;
+  border-radius: 3vh;
+  border: 1px solid black;
+}
+.container section#categories .product-warp .logo2 {
+  display: flex;
+  background-color: rgb(91, 142, 165);
+}
+.container section#categories .product-warp .logo1 {
+  display: flex;
+}
+.container section#categories .product-warp .left #img-logo35 {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: white;
+}
+.container section#categories .product-warp .left img {
+  width: 60px;
+  height: 60px;
+}
+.container section#categories .product-warp .right {
+  display: flex;
+  flex-direction: column;
+}
+.container section#categories .product-warp .right .discription {
+  width: 200px;
+}
+.container section#categories .product-warp .right .discription1 {
+  width: 200px;
+  margin-left: 40px;
+}
+.container section#categories .list-card {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.container section#categories .list-card .first-card {
+  box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+  -webkit-box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+  -moz-box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+}
+.container section#categories .list-card .first-card .product {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  font-family: "Sarabun", sans-serif;
+}
+.container section#categories .list-card .first-card .product1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section#categories .list-card .first-card .product1 .fa-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 40px;
+}
+.container section#categories .list-card .first-card .product1 #img-product41 {
+  position: absolute;
+  width: 210px;
+  height: 180px;
+}
+.container section#categories .list-card .first-card .product1 #img-product42 {
+  position: absolute;
+  top: -10px;
+  width: 170px;
+  height: 200px;
+}
+.container section#categories .list-card .first-card .product1 #img-product43 {
+  position: absolute;
+  top: 10px;
+  width: 170px;
+  height: 170px;
+}
+.container section#categories .list-card .first-card .product1 #img-product44 {
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+}
+.container section#categories .list-card .first-card .product1 img {
+  position: absolute;
+  top: 10px;
+  width: 250px;
+  height: 250px;
+  pointer-events: none;
+}
+.container section#categories .list-card .first-card .product1 .description-card {
+  position: absolute;
+  bottom: 90px;
+}
+.container section#categories .list-card .first-card .product1 .description-card h3 {
+  text-align: center;
+  font-family: "Sarabun", sans-serif;
+}
+.container section#categories .list-card .first-card .product1 .description-card p {
+  font-size: 14px;
+}
+.container section#categories .list-card .first-card .product1 .description-card .fa-star {
+  color: yellow;
+}
+.container section#categories .list-card .first-card .product1 .description-box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+}
+.container section#categories .list-card .first-card .product1 .description-box .description-text {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  bottom: 10px;
+}
+.container section#categories .list-card .first-card .product1 .description-box .description-text .left {
+  position: absolute;
+  left: 20px;
+}
+.container section#categories .list-card .first-card .product1 .description-box .description-text .left p {
+  color: deepskyblue;
+  font-size: larger;
+  font-weight: bolder;
+}
+.container section#categories .list-card .first-card .product1 .description-box .description-text .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  right: 20px;
+  background: rgb(91, 142, 165);
+  border-radius: 10px;
+  color: white;
+  gap: 10px;
+}
+.container section#review {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+.container section#review h1 {
+  margin-top: 130px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 60px;
+}
+.container section#review p {
+  font-family: "Sarabun", sans-serif;
+}
+.container section#review .warp-content {
+  display: flex;
+}
+.container section#review .warp-content #img-sofa {
+  position: absolute;
+  width: 500px;
+  top: 200px;
+}
+.container section#review .warp-content #img-avatar {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 40px;
+  top: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+.container section#review .warp-content .box {
+  position: absolute;
+  right: 150px;
+  top: 280px;
+  width: 700px;
+  height: 250px;
+  box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+  -webkit-box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+  -moz-box-shadow: 0px 2px 5px 10px rgb(219, 219, 219);
+}
+.container section#review .warp-content .box .title {
+  position: absolute;
+  top: 20px;
+  width: 700px;
+}
+.container section#review .warp-content .box .title .fa-solid {
+  position: relative;
+  gap: 50px;
+  left: 580px;
+  top: 20px;
+  color: goldenrod;
+}
+.container section#review .warp-content .box .title h1 {
+  position: absolute;
+  top: -160px;
+  left: 160px;
+}
+.container section#review .warp-content .box .title .p1 {
+  position: absolute;
+  top: 70px;
+  left: 160px;
+  font-weight: bolder;
+}
+.container section#review .warp-content .box .title .p2 {
+  position: absolute;
+  top: 70px;
+  left: 565px;
+  font-weight: bolder;
+}
+.container section#review .warp-content .box .description .p3 {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  text-align: center;
+}
+.container section#box-footer {
+  font-family: "Sarabun", sans-serif;
+}
+.container section#box-footer h1 {
+  font-size: 40px;
+}
+.container section#box-footer .warp-content {
+  display: flex;
+  position: relative;
+  left: 120px;
+  border-radius: 40px;
+  width: 80%;
+  height: 43vh;
+  text-align: center;
+  background-image: url(../../public/assets/image/bg3.png);
+}
+.container section#box-footer .warp-content .title {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+}
+.container section#box-footer .warp-content .box-input {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 300px;
+  width: 800px;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  background-color: white;
+}
+.container section#box-footer .warp-content .box-input input {
+  border: none;
+}
+.container section#box-footer .warp-content .box-input .box-subs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 140px;
+  height: 50px;
+}
+.container footer {
+  display: flex;
+  width: 100%;
+  height: 75vh;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+.container footer .left {
+  width: 30%;
+}
+.container footer .left h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: "Titillium Web", sans-serif;
+}
+.container footer .left .p1 {
+  line-height: 25px;
+  text-align: center;
+}
+.container footer .middle1 {
+  width: 20%;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+.container footer .middle1 img {
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+}
+.container footer .middle2 {
+  width: 20%;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+.container footer .right1 {
+  width: 30%;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+.container footer .right1 .icon {
+  letter-spacing: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+#container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#container ul {
+    border: 3px solid red;
+    list-style: decimal;
+    text-align: start;
+} 
+#container ul li h1 .judul {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+
