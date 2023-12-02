@@ -183,6 +183,12 @@ body .container section#profile {
   background-color: rgb(132, 146, 148);
   font-family: "Poppins", sans-serif;
   border-radius: 3vh;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1024px) {
+  body .container section#profile {
+    flex-direction: row;
+  }
 }
 body .container section#profile .left-side {
   color: white;
@@ -257,50 +263,155 @@ body .container section#profile .right .send {
 }
 body .container section#profile .right ul {
   padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  background-color: red;
+  list-style: none;
 }
-@media screen and (min-width: 1024px) {
-  body .container section#profile .right ul {
-    flex-direction: row;
-  }
-  body .container section#profile .right ul li {
-    list-style: none;
-    text-align: center;
-    color: white;
-  }
-  body .container section#profile .right ul li img {
-    width: 150px;
-    border-radius: 50%;
-  }
+body .container section#profile .right ul li {
+  text-align: center;
+  color: white;
+}
+body .container section#profile .right ul li img {
+  width: 150px;
+  border-radius: 50%;
 }
 body .container section#main {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  color: white;
-}
-body .container section#main .left {
-  display: flex;
+  font-family: "Poppins", sans-serif;
   gap: 20px;
 }
-body .container section#main .left .title-profile {
-  display: flex;
-  max-height: min-content;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
+@media screen and (min-width: 1024px) {
+  body .container section#main {
+    flex-direction: row;
+  }
+}
+body .container section#main .left-side {
+  color: grey;
+}
+body .container section#main .left-side span {
   padding: 2px 10px;
   border: 1px solid white;
+  border-radius: 10px;
+}
+body .container section#main .right-side {
+  color: white;
+}
+body .container section#card {
+  width: 100%;
   border-radius: 20px;
   font-family: "Poppins", sans-serif;
 }
-body .container section#main .left .title-profile:hover {
-  background-color: white;
-  color: black;
+body .container section#card .card-warp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
 }
-body .container section#main .right {
+@media screen and (min-width: 1024px) {
+  body .container section#card .card-warp {
+    flex-direction: row;
+    width: auto;
+  }
+}
+body .container section#card .card-warp .card {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  flex-grow: 1;
+}
+body .container section#card .card-warp .card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+body .container section#card .card-warp .card .card-header .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 120px;
+}
+body .container section#card .card-warp .card .card-header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: black;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+body .container section#card .card-warp .card .img-card img {
+  width: 100%;
+  padding-top: 10px;
+}
+body .container section#card .card-warp .card .discription .top-side {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+body .container section#card .card-warp .card .discription .bottom-side b {
+  color: white;
+}
+body .container section#card .card-warp .card .discription .bottom-side span {
+  color: grey;
+}
+body .container section#footer {
+  color: white;
   font-family: "Poppins", sans-serif;
+}
+body .container section#footer .head {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  border-bottom: 4px solid white;
+}
+body .container section#footer .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .container section#footer .footer .left-side {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1024px) {
+  body .container section#footer .footer .left-side {
+    flex-direction: row;
+  }
+}
+body .container section#footer .warp-side {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  width: 60%;
+  align-items: flex-end;
+}
+@media screen and (min-width: 1024px) {
+  body .container section#footer .warp-side {
+    flex-direction: row;
+  }
+}
+body .container section#footer .warp-side .hidden {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  body .container section#footer .warp-side .hidden {
+    display: flex;
+  }
+}
+body .container section#footer .warp-side .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 1024px) {
+  body .container section#footer .warp-side .right-side {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
