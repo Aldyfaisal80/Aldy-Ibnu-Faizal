@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+// Responsive Breakpoint
+// Responsive Breakpoint
+$media-sm: 640px;
+$media-md: 768px;
+$media-lg: 1024px;
+$media-xl: 1280px;
+
+// Font Variable
+$caveat: "Caveat", cursive;
+$poppins: "Poppins", sans-serif;
+$onest: "Onest", sans-serif;
+
+.container {
+    padding: 30px;
+    background-color: rgb(241, 244, 252);
+
+    // ? Top-navbar
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(18, 24, 43);
+        border-radius: 15px;
+        padding: 5px;
+        
+        .icon {
+            width: 50px;
+            border-radius: 15px;
+            border: 4px solid;
+            padding: 5px;
+            
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+            
+        }
+        .menu {
+            @media screen and (min-width: $media-sm) {
+                display: none;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: rgb(18, 24, 43);
+            color: white;
+            padding: 15px;
+            border: 1px solid white;
+            border-radius: 15px;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+        .left {
+            @media screen and (min-width: $media-sm) {
+                display: flex;
+            }
+            display: none;
+            width: 50%;
+            gap: 5px;
+
+            .nav-link {
+                width: 150px;
+                background-color: rgb(18, 24, 43);
+                color: white;
+                padding: 15px;
+                border: 1px solid white;
+                border-radius: 15px;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+        .right {
+            @media screen and (min-width: $media-sm) {
+                display: flex;
+            }
+            display: none;
+            width: 50%;
+            justify-content: flex-end;
+            gap: 5px;
+
+            .icon {
+                @media screen and (min-width: $media-sm) {
+                    // display: none;
+                }
+                // display: flex;
+                width: 50px;
+                border-radius: 25%;
+                border: 1px solid white;
+                padding: 5px;
+                background-color: rgb(18, 24, 43);
+                color: white;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+            .nav-link {
+                width: 150px;
+                background-color: rgb(18, 24, 43);
+                color: white;
+                padding: 15px;
+                border: 1px solid white;
+                border-radius: 15px;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    // ? Main Content
+    section#main {
+        @media screen and (min-width: $media-sm) {
+         flex-direction: row;
+        //  width: 100%;
+        }
+        // width: 50%;
+        display: flex;
+        flex-direction: column;
+        .left-discription {
+            @media screen and (min-width: $media-sm) {
+            // width: 100%;
+            }
+            display: flex;
+            flex-direction: column;
+            // width: 50%;
+            padding: 80px 0 0 20px;
+            font-family: $onest;
+
+            .top-discription {
+                width: 100%;
+
+                .p {
+                    padding-bottom: 10px;
+                }
+
+                .title {
+                    font-size: 3rem;
+                    font-weight: 700;
+                }
+
+                .discription {
+                    padding-top: 20px;
+                }
+
+                .get {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    width: 200px;
+                    padding: 10px;
+                    margin-top: 40px;
+                    background-color: rgb(18, 24, 43);
+                    color: white;
+                    gap: 20px;
+
+                    .fa-arrow-right {
+                        border: 1px solid white;
+                        padding: 5px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            // ? Bottom Main Check List
+            .bottom-discription {
+                @media screen and (min-width: $media-sm) {
+                    flex-direction: row;
+                }
+                flex-direction: column;
+                display: flex;
+                padding-top: 40px;
+                // justify-content: space-between;
+                gap: 20px;
+
+                .checklist {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+
+                        &::after {
+                            content: "";
+                            width: 200px;
+                            border-bottom: 4px solid rgb(51, 199, 128);
+                        }
+
+                        .fa-check {
+                            background-color: rgb(51, 199, 128);
+                            padding: 5px;
+                            border-radius: 50%;
+                            color: white;
+                        }
+                    }
+
+                    .title {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+
+                    .discription {
+                        b {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        // ? Warp Riht Card Box
+        .warp-right-box {
+            @media screen and (min-width: $media-sm) {
+                flex-direction: row;
+                width: 100%;
+            }
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: $onest;
+            padding-left: 40px;
+            // ? Left Card Box
+            .left-box {
+                display: flex;
+                flex-direction: column;
+                padding-top: 80px;
+
+                .top {
+                    width: 100%;
+
+                    .card {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        background-color: rgb(18, 24, 43);
+                        color: white;
+                        padding: 20px;
+                        border-radius: 20px;
+
+                        .check {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 50px;
+                            height: 50px;
+                            font-size: 1.4rem;
+                            background-color: #02ed8b;
+                            border: 2px solid white;
+                            border-radius: 50%;
+                            transform: translateY(-40px);
+                        }
+
+                        .title-card {
+                            text-align: center;
+                            font-size: 1rem;
+                        }
+
+                        .p {
+                            padding: 15px;
+                            text-align: center;
+                            color: grey;
+                        }
+
+                        .warp-box {
+                            display: flex;
+                            gap: 10px;
+                            justify-content: center;
+                            align-items: center;
+
+                            .number-box {
+                                display: flex;
+                                // flex-grow: 1;
+                                width: 25%;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 20px;
+                                border-radius: 10px;
+                                border: 2px solid grey;
+
+                                &:hover {
+                                    border: 2px solid white;
+                                }
+                            }
+                        }
+
+                        .line {
+                            display: flex;
+                            margin: 20px 6px;
+                            display: block;
+                            width: 100%;
+                            border: 1px solid grey;
+
+                            &::after {
+                                display: block;
+                                content: "";
+                                width: 25%;
+                                border: 1px solid rgb(51, 199, 128);
+                            }
+                        }
+
+                        .p {
+
+                            a {
+                                text-decoration: none;
+                                color: gray;
+                            }
+
+                            b {
+                                color: white;
+                                text-decoration: underline;
+
+                            }
+                        }
+                    }
+                }
+
+                .bottom {
+                    .card {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 20px;
+                        gap: 10px;
+
+                        .title {
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                        }
+
+                        .p {
+                            color: grey;
+                        }
+                    }
+
+                    .border-bottom {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 88%;
+                        border: 2px dotted black;
+                        margin-left: 6%;
+                        margin-right: 6%;
+                    }
+
+                    .card2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // flex-direction: column;  
+                        width: 100%;
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 20px;
+
+                        .warp-inside {
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            padding: 30px;
+                            border-radius: 10px;
+                            background-color: rgb(237, 249, 242);
+
+                            .icon {
+                                .fa-rectangle-list {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 40px;
+                                    height: 40px;
+                                    font-size: 1.4rem;
+                                    color: rgb(51, 199, 128);
+                                    background-color: rgb(212, 242, 226);
+                                }
+                            }
+
+                            .discription {
+                                padding-left: 20px;
+
+                                .title {
+                                    width: 100%;
+                                    font-weight: bold;
+
+                                    .fa-circle {
+                                        color: rgb(51, 199, 128);
+                                        margin-left: 40px;
+                                        font-size: 0.7rem;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            // ? Right Card Box
+            .right-box {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-top: 40px ;
+
+                .card-solution {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 110px;
+                    color: white;
+                    padding: 20px;
+                    border-radius: 20px;
+                    background-position: center;
+                    background-size: cover;
+                    background-image: url(../../public/assets/image/good-faces-J1r-0xdoEZY-unsplash.jpg);
+
+                    .top-card-solution {
+                        .title {
+                            display: flex;
+                            font-size: 1rem;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    .bottom-card-solution {
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+
+                            span {
+                                font-size: 2rem;
+                            }
+
+                            .fa-arrow-right {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                margin-top: 40px;
+                                width: 40px;
+                                height: 40px;
+                                border: 2px solid white;
+                            }
+                        }
+                    }
+                }
+
+                .card-bank {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 10px;
+                    .top-card-bank {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 70px;
+                        padding: 20px;
+                        border-radius: 20px;
+                        color: white;
+                        background: rgb(153, 121, 233);
+                        background: linear-gradient(90deg, rgba(153, 121, 233, 1) 0%, rgba(62, 0, 219, 1) 100%);
+                        .title {
+                            display: flex;
+                            font-size: 1.4rem;
+                            align-items: center;
+                            letter-spacing: 5px;
+                            justify-content: space-between;
+                        }
+
+                        .warp-balance {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .balance {
+                                display: flex;
+                                // flex-direction: column;
+                                sup {
+                                    margin-top: 10px;
+                                }
+                            }
+                            .text {
+                                display: flex;
+                                justify-content: space-between;
+                                // padding-top: 20px;
+                                align-items: center;
+                                .fa-arrow-down {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 30px;
+                                    height: 30px;
+                                    color: white;
+                                    border-radius: 50%;
+                                    border: 1px solid white;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-messages {
+                        display: flex;
+                        padding: 20px;
+                        background-color: white;
+                        flex-direction: column;
+                        width: 100%;
+                        border-radius: 20px;
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                            color: purple;
+                        }
+                        .warp-chat-messages {
+                            display: flex;
+                            flex-direction: column;
+                            padding-top: 10px;
+                            gap: 20px;
+                            .top-chat {
+                                display: flex;
+                                justify-content: space-between;
+                                .left-side-chat {
+                                    display: flex;
+                                    .icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 1.4rem;
+                                        font-weight: bold;
+                                        color: chocolate;
+                                        background-color: rgb(251, 230, 222);
+                                        border-radius: 10px;
+                                        border: 1px solid black;
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                    .username {
+                                        padding-left: 10px;
+                                        .fa-circle {
+                                            color: #02ed8b;
+                                        }
+                                    }
+                                }
+                                .right-side-chat {
+                                    display: flex;
+                                    .status-username {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-end;
+                                        .number {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 50%;
+                                            background-color: chocolate;
+                                            color: white;
+                                            margin-left: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom-chat {
+                                display: flex;
+                                justify-content: space-between;
+                                .left-side-chat {
+                                    display: flex;
+                                    .icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 1.4rem;
+                                        font-weight: bold;
+                                        color: chocolate;
+                                        background-color: rgb(251, 230, 222);
+                                        border-radius: 10px;
+                                        border: 1px solid black;
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                    .username {
+                                        padding-left: 10px;
+                                        .fa-circle {
+                                            color: #02ed8b;
+                                        }
+                                    }
+                                }
+                                .right-side-chat {
+                                    display: flex;
+                                    .status-username {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-end;
+                                        .number {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 50%;
+                                            background-color: chocolate;
+                                            color: white;
+                                            margin-left: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

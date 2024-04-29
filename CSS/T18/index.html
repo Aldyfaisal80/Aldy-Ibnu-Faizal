@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- JS -->
+    <script src="./src/js/app.js" defer></script>
+    <title>Disorganized</title>
+</head>
+
+<body class="p-4 bg-black">
+    <header class="flex sm:flex-row-reverse font-poppins justify-between">
+        <div class="flex justify-center items-center sm:flex-row-reverse gap-4">
+            <img class="w-[50px] border border-white aspect-square rounded-[25%]" src="./public/assets/image/nico.jpg"
+                alt="">
+            <div class="flex flex-col sm:hidden text-white ">
+                <span>Maverich Elias</span>
+                <span class="text-gray-300">Welcome Back</span>
+            </div>
+        </div>
+        <section id="search" class="hidden sm:flex flex-row-reverse justify-center items-center w-full gap-[10px] font-poppins">
+            <div class="flex rounded-[5px] p-[10px] grow gap-[20px]">
+                <form action="" class="flex w-[60%]">
+                    <input class="flex justify-center items-center p-[2px] rounded-[5px] w-full outline-none" type="text"
+                        placeholder="Coffee, Products, Menu ...">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass text-gray-500 text-[1rem] ml-[-20px] flex justify-center items-center"></i></button>
+                </form>
+                <div class="flex justify-around items-center w-[40%] text-white font-poppins">
+                    <span><a href="#">Popular</a></span>
+                    <span><a href="#">Newest</a></span>
+                    <span><a href="#">Recommeded</a></span>
+                    <span><a href="#">Most Liked</a></span>
+                    <span><a href="#">Best Seller</a></span>
+                </div>
+            </div>
+            <div class="flex justify-center items-center bg-black border-2 border-orange-500 p-[15px] rounded-[15px] w-[50px]">
+                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+            </div>
+        </section>
+        <div class="flex justify-center items-center w-[50px] rounded-[20%] bg-white p-2 sm:hidden">
+            <i class="fa-solid fa-magnifying-glass text-[1.2rem]"></i>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="flex justify-between bg-white mt-[20px] w-full bg-cover bg-center p-3 font-poppins bg-bottom rounded-[2vh] "
+        style="background-image: url(./public/assets/image/coffee-beans-white-paper_662214-45598.jpg);">
+        <div class="w-[1/2]">
+            <div class="text-[1.6rem] sm:text-[3.2rem] mb-[15px]">
+                <span class="flex font-black">Start <p class="ml-[5px] text-orange-600">YOUR</p></span>
+                <span class="flex font-black text-orange-600">DAY<p class="text-black ml-[5px]"> WITH</p></span>
+                <span class="font-black">COFFEE</span>
+            </div>
+            <div class="sm:text-[1.2rem] leading-5 font-semibold">
+                <span class="">The nest grain the finest</span>
+                <span>
+                    <p></p>roast the most powerful
+                </span>
+                <span>flavor</span>
+            </div>
+            <div class="bg-black text-white w-[150px] rounded-[20px] mt-[10px]">
+                <span class="flex justify-center items-center text-[1rem] p-2">Order Now</span>
+            </div>
+        </div>
+        <div class="w-1/2 flex justify-center items-center relative">
+            <img class="w-[200px]" src="./public/assets/image/kopibg.png" alt="">
+            <img class="absolute bottom-[20px] left-[-10px] sm:left-[280px] w-[60px] sm:w-[80px]"
+                src="./public/assets/image/30-off-removebg-preview.png" alt="">
+        </div>
+    </main>
+    <!-- END OF MAIN CONTENT -->
+    <!-- SECTION CATEGORIES -->
+    <section class="w-full mt-[20px] font-poppins flex sm:hidden">
+        <div class="flex justify-between gap-3 items-center text-white overflow-x-scroll">
+            <span
+                class="px-5 py-2 shrink-0 rounded-[2vh] border-2 border-white hover:bg-orange-200 hover:text-black hover:border-orange-200">Popular</span>
+            <span
+                class="px-5 py-2 shrink-0 rounded-[2vh] border-2 border-white hover:bg-orange-200 hover:text-black hover:border-orange-200">Newest</span>
+            <span
+                class="px-5 py-2 shrink-0 rounded-[2vh] border-2 border-white hover:bg-orange-200 hover:text-black hover:border-orange-200">Recommeded</span>
+            <span
+                class="px-5 py-2 shrink-0 rounded-[2vh] border-2 border-white hover:bg-orange-200 hover:text-black hover:border-orange-200">Most
+                Liked</span>
+            <span
+                class="px-5 py-2 shrink-0 rounded-[2vh] border-2 border-white hover:bg-orange-200 hover:text-black hover:border-orange-200">Best
+                Seller</span>
+        </div>
+    </section>
+    <!-- END OF SECTION CATEGORIES -->
+    <!-- SECTION OF CARD -->
+    <section class="pt-[20px]">
+        <div class="flex w-full gap-4 font-poppins">
+            <div class="w-1/2 bg-[#35291e] rounded-[3vh] p-3">
+                <div>
+                    <img class="rounded-[2vh] aspect-square" src="./public/assets/image/1.jpg" alt="">
+                </div>
+                <div class="text-white mt-[20px]">
+                    <span class="font-bold">Indonesia Beans</span>
+                    <span class="text-gray-300 font-light">Coffee Beans</span>
+                    <span class="flex justify-between">
+                        <span class="font-bold">$235.000</span>
+                        <i
+                            class="fa-solid fa-bag-shopping text-black border border-black p-2 bg-[#e1cc97] rounded-[2vh]"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="w-1/2 bg-[#35291e] rounded-[3vh] p-3 hidden sm:block">
+                <div>
+                    <img class="rounded-[2vh] aspect-square" src="./public/assets/image/1.jpg" alt="">
+                </div>
+                <div class="text-white mt-[20px]">
+                    <span class="font-bold">Indonesia Beans</span>
+                    <span class="text-gray-300 font-light">Coffee Beans</span>
+                    <span class="flex justify-between">
+                        <span class="font-bold">$235.000</span>
+                        <i
+                            class="fa-solid fa-bag-shopping text-black border border-black p-2 bg-[#e1cc97] rounded-[2vh]"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="w-1/2 bg-[#35291e] rounded-[3vh] p-3">
+                <div>
+                    <img class="rounded-[2vh] aspect-square" src="./public/assets/image/2.jpg" alt="">
+                </div>
+                <div class="text-white mt-[20px]">
+                    <span class="font-bold">Indonesia Beans</span>
+                    <span class="text-gray-300 font-light">Coffee Beans</span>
+                    <span class="flex justify-between">
+                        <span class="font-bold">$235.000</span>
+                        <i
+                            class="fa-solid fa-bag-shopping text-black border border-black p-2 bg-[#e1cc97] rounded-[2vh]"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="w-1/2 bg-[#35291e] rounded-[3vh] p-3 hidden sm:block">
+                <div>
+                    <img class="rounded-[2vh] aspect-square" src="./public/assets/image/2.jpg" alt="">
+                </div>
+                <div class="text-white mt-[20px]">
+                    <span class="font-bold">Indonesia Beans</span>
+                    <span class="text-gray-300 font-light">Coffee Beans</span>
+                    <span class="flex justify-between">
+                        <span class="font-bold">$235.000</span>
+                        <i
+                            class="fa-solid fa-bag-shopping text-black border border-black p-2 bg-[#e1cc97] rounded-[2vh]"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SECTION CARD -->
+    <!-- SECTION OF Recommeded -->
+    <section class="mb-[60px] sm:mb-0">
+        <!-- head Recomended -->
+        <div class="flex text-white justify-between pt-[15px] font-poppins">
+            <span class="font-bold sm:text-[2rem]">Recomended</span>
+            <span class="text-gray-300 sm:text-[1.5rem]">View all</span>
+        </div>
+        <!-- end head -->
+        <div class="flex flex-col w-full sm:flex-row sm:justify-around sm:items-center gap-[20px] pt-[20px] font-poppins">
+            <div class="flex rounded-[2vh] hidden sm:flex">
+                <div class="w-[100px]">
+                    <img class="aspect-square rounded-[20px]" src="./public/assets/image/1.png" alt="">
+                </div>
+                <div class="text-white flex flex-col gap-[4px] pl-[15px] pt-[10px]">
+                    <span class="font-bold">Indonesian Beans</span>
+                    <span class="text-gray-300">Coffee Beans</span>
+                    <span>Rating : 4,9<i class="fa-solid fa-star text-orange-600 text-[1rem] ml-[10px]"></i></span>
+                </div>
+            </div>
+            <div class="flex rounded-[2vh]">
+                <div class="w-[100px]">
+                    <img class="aspect-square rounded-[20px]" src="./public/assets/image/1.png" alt="">
+                </div>
+                <div class="text-white flex flex-col gap-[4px] pl-[15px] pt-[10px]">
+                    <span class="font-bold">Indonesian Beans</span>
+                    <span class="text-gray-300">Coffee Beans</span>
+                    <span>Rating : 4,9<i class="fa-solid fa-star text-orange-600 text-[1rem] ml-[10px]"></i></span>
+                </div>
+            </div>
+            <div class="flex rounded-[2vh] hidden sm:flex">
+                <div class="w-[100px]">
+                    <img class="aspect-square rounded-[20px]" src="./public/assets/image/2.png" alt="">
+                </div>
+                <div class="text-white flex flex-col gap-[4px] pl-[15px] pt-[10px]">
+                    <span class="font-bold">Indonesian Beans</span>
+                    <span class="text-gray-300">Coffee Beans</span>
+                    <span>Rating : 4,9<i class="fa-solid fa-star text-orange-600 text-[1rem] ml-[10px]"></i></span>
+                </div>
+            </div>
+            <div class="flex rounded-[2vh]">
+                <div class="w-[100px]">
+                    <img class="aspect-square rounded-[20px]" src="./public/assets/image/2.png" alt="">
+                </div>
+                <div class="text-white flex flex-col gap-[4px] pl-[15px] pt-[10px]">
+                    <span class="font-bold">Indonesian Beans</span>
+                    <span class="text-gray-300">Coffee Beans</span>
+                    <span>Rating : 4,9<i class="fa-solid fa-star text-orange-600 text-[1rem] ml-[10px]"></i></span>
+                </div>
+            </div>
+            <div class="flex rounded-[2vh] hidden sm:flex">
+                <div class="w-[100px]">
+                    <img class="aspect-square rounded-[20px]" src="./public/assets/image/1.jpg" alt="">
+                </div>
+                <div class="text-white flex flex-col gap-[4px] pl-[15px] pt-[10px]">
+                    <span class="font-bold">Indonesian Beans</span>
+                    <span class="text-gray-300">Coffee Beans</span>
+                    <span>Rating : 4,9<i class="fa-solid fa-star text-orange-600 text-[1rem] ml-[10px]"></i></span>
+                </div>
+            </div>
+            <div class="flex rounded-[2vh]">
+                <div class="w-[100px]">
+                    <img class="aspect-square rounded-[20px]" src="./public/assets/image/1.jpg" alt="">
+                </div>
+                <div class="text-white flex flex-col gap-[4px] pl-[15px] pt-[10px]">
+                    <span class="font-bold">Indonesian Beans</span>
+                    <span class="text-gray-300">Coffee Beans</span>
+                    <span>Rating : 4,9<i class="fa-solid fa-star text-orange-600 text-[1rem] ml-[10px]"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER TIXED -->
+    <footer class="w-full text-gray-300 pt-[20px] font-poppins fixed bottom-0 left-0 border-t-2 border-orange-500 bg-black sm:hidden">
+        <div class="w-full flex justify-around">
+            <div class="flex flex-col justify-center items-center">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <i class="fa-regular fa-heart"></i>
+                <span>Favourite</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Inbox</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <i class="fa-regular fa-rectangle-list"></i>
+                <span>Order</span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Bag</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

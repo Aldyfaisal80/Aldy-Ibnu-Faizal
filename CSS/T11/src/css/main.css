@@ -116,6 +116,7 @@
   color: white;
   border-right: 5px double #ffffff;
   border-bottom: 5px double #ffffff;
+  border-radius: 10px;
   border-collapse: separate;
   box-shadow: 1px 4px 0px 2px rgba(255, 255, 255, 0.45);
 }

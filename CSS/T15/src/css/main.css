@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 30px;
+  background-color: rgb(241, 244, 252);
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(18, 24, 43);
+  border-radius: 15px;
+  padding: 5px;
+}
+.container header .icon {
+  width: 50px;
+  border-radius: 15px;
+  border: 4px solid;
+  padding: 5px;
+}
+.container header .icon:hover {
+  background-color: black;
+  color: white;
+}
+.container header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(18, 24, 43);
+  color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+@media screen and (min-width: 640px) {
+  .container header .menu {
+    display: none;
+  }
+}
+.container header .menu:hover {
+  background-color: white;
+  color: black;
+}
+.container header .left {
+  display: none;
+  width: 50%;
+  gap: 5px;
+}
+@media screen and (min-width: 640px) {
+  .container header .left {
+    display: flex;
+  }
+}
+.container header .left .nav-link {
+  width: 150px;
+  background-color: rgb(18, 24, 43);
+  color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.container header .left .nav-link:hover {
+  background-color: white;
+  color: black;
+}
+.container header .right {
+  display: none;
+  width: 50%;
+  justify-content: flex-end;
+  gap: 5px;
+}
+@media screen and (min-width: 640px) {
+  .container header .right {
+    display: flex;
+  }
+}
+.container header .right .icon {
+  width: 50px;
+  border-radius: 25%;
+  border: 1px solid white;
+  padding: 5px;
+  background-color: rgb(18, 24, 43);
+  color: white;
+}
+.container header .right .icon:hover {
+  background-color: white;
+  color: black;
+}
+.container header .right .nav-link {
+  width: 150px;
+  background-color: rgb(18, 24, 43);
+  color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.container header .right .nav-link:hover {
+  background-color: white;
+  color: black;
+}
+.container section#main {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 640px) {
+  .container section#main {
+    flex-direction: row;
+  }
+}
+.container section#main .left-discription {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 0 20px;
+  font-family: "Onest", sans-serif;
+}
+.container section#main .left-discription .top-discription {
+  width: 100%;
+}
+.container section#main .left-discription .top-discription .p {
+  padding-bottom: 10px;
+}
+.container section#main .left-discription .top-discription .title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.container section#main .left-discription .top-discription .discription {
+  padding-top: 20px;
+}
+.container section#main .left-discription .top-discription .get {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 40px;
+  background-color: rgb(18, 24, 43);
+  color: white;
+  gap: 20px;
+}
+.container section#main .left-discription .top-discription .get .fa-arrow-right {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.container section#main .left-discription .bottom-discription {
+  flex-direction: column;
+  display: flex;
+  padding-top: 40px;
+  gap: 20px;
+}
+@media screen and (min-width: 640px) {
+  .container section#main .left-discription .bottom-discription {
+    flex-direction: row;
+  }
+}
+.container section#main .left-discription .bottom-discription .checklist {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.container section#main .left-discription .bottom-discription .checklist .icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.container section#main .left-discription .bottom-discription .checklist .icon::after {
+  content: "";
+  width: 200px;
+  border-bottom: 4px solid rgb(51, 199, 128);
+}
+.container section#main .left-discription .bottom-discription .checklist .icon .fa-check {
+  background-color: rgb(51, 199, 128);
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+}
+.container section#main .left-discription .bottom-discription .checklist .title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.container section#main .left-discription .bottom-discription .checklist .discription b {
+  text-decoration: underline;
+}
+.container section#main .warp-right-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Onest", sans-serif;
+  padding-left: 40px;
+}
+@media screen and (min-width: 640px) {
+  .container section#main .warp-right-box {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.container section#main .warp-right-box .left-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.container section#main .warp-right-box .left-box .top {
+  width: 100%;
+}
+.container section#main .warp-right-box .left-box .top .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(18, 24, 43);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.container section#main .warp-right-box .left-box .top .card .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.4rem;
+  background-color: #02ed8b;
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translateY(-40px);
+}
+.container section#main .warp-right-box .left-box .top .card .title-card {
+  text-align: center;
+  font-size: 1rem;
+}
+.container section#main .warp-right-box .left-box .top .card .p {
+  padding: 15px;
+  text-align: center;
+  color: grey;
+}
+.container section#main .warp-right-box .left-box .top .card .warp-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container section#main .warp-right-box .left-box .top .card .warp-box .number-box {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+.container section#main .warp-right-box .left-box .top .card .warp-box .number-box:hover {
+  border: 2px solid white;
+}
+.container section#main .warp-right-box .left-box .top .card .line {
+  display: flex;
+  margin: 20px 6px;
+  display: block;
+  width: 100%;
+  border: 1px solid grey;
+}
+.container section#main .warp-right-box .left-box .top .card .line::after {
+  display: block;
+  content: "";
+  width: 25%;
+  border: 1px solid rgb(51, 199, 128);
+}
+.container section#main .warp-right-box .left-box .top .card .p a {
+  text-decoration: none;
+  color: gray;
+}
+.container section#main .warp-right-box .left-box .top .card .p b {
+  color: white;
+  text-decoration: underline;
+}
+.container section#main .warp-right-box .left-box .bottom .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 10px;
+}
+.container section#main .warp-right-box .left-box .bottom .card .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.container section#main .warp-right-box .left-box .bottom .card .p {
+  color: grey;
+}
+.container section#main .warp-right-box .left-box .bottom .border-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  border: 2px dotted black;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.container section#main .warp-right-box .left-box .bottom .card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.container section#main .warp-right-box .left-box .bottom .card2 .warp-inside {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(237, 249, 242);
+}
+.container section#main .warp-right-box .left-box .bottom .card2 .warp-inside .icon .fa-rectangle-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
+  color: rgb(51, 199, 128);
+  background-color: rgb(212, 242, 226);
+}
+.container section#main .warp-right-box .left-box .bottom .card2 .warp-inside .discription {
+  padding-left: 20px;
+}
+.container section#main .warp-right-box .left-box .bottom .card2 .warp-inside .discription .title {
+  width: 100%;
+  font-weight: bold;
+}
+.container section#main .warp-right-box .left-box .bottom .card2 .warp-inside .discription .title .fa-circle {
+  color: rgb(51, 199, 128);
+  margin-left: 40px;
+  font-size: 0.7rem;
+}
+.container section#main .warp-right-box .right-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 40px;
+}
+.container section#main .warp-right-box .right-box .card-solution {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../public/assets/image/good-faces-J1r-0xdoEZY-unsplash.jpg);
+}
+.container section#main .warp-right-box .right-box .card-solution .top-card-solution .title {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+}
+.container section#main .warp-right-box .right-box .card-solution .bottom-card-solution .title {
+  display: flex;
+  justify-content: space-between;
+}
+.container section#main .warp-right-box .right-box .card-solution .bottom-card-solution .title span {
+  font-size: 2rem;
+}
+.container section#main .warp-right-box .right-box .card-solution .bottom-card-solution .title .fa-arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 40px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+}
+.container section#main .warp-right-box .right-box .card-bank {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 70px;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background: rgb(153, 121, 233);
+  background: linear-gradient(90deg, rgb(153, 121, 233) 0%, rgb(62, 0, 219) 100%);
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank .title {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  letter-spacing: 5px;
+  justify-content: space-between;
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank .warp-balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank .warp-balance .balance {
+  display: flex;
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank .warp-balance .balance sup {
+  margin-top: 10px;
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank .warp-balance .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container section#main .warp-right-box .right-box .card-bank .top-card-bank .warp-balance .text .fa-arrow-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: purple;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 20px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat {
+  display: flex;
+  justify-content: space-between;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .left-side-chat {
+  display: flex;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .left-side-chat .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: chocolate;
+  background-color: rgb(251, 230, 222);
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .left-side-chat .username {
+  padding-left: 10px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .left-side-chat .username .fa-circle {
+  color: #02ed8b;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .right-side-chat {
+  display: flex;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .right-side-chat .status-username {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .top-chat .right-side-chat .status-username .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: chocolate;
+  color: white;
+  margin-left: 20px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat {
+  display: flex;
+  justify-content: space-between;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .left-side-chat {
+  display: flex;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .left-side-chat .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: chocolate;
+  background-color: rgb(251, 230, 222);
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .left-side-chat .username {
+  padding-left: 10px;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .left-side-chat .username .fa-circle {
+  color: #02ed8b;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .right-side-chat {
+  display: flex;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .right-side-chat .status-username {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container section#main .warp-right-box .right-box .card-bank .card-messages .warp-chat-messages .bottom-chat .right-side-chat .status-username .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: chocolate;
+  color: white;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

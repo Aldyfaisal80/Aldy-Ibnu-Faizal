@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+  background-color: black;
+}
+.container header {
+  padding: 30px 30px 0 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+.container header .left {
+  display: flex;
+  width: 200px;
+  margin-left: -30px;
+  align-items: flex-end;
+}
+.container header .left .box-border {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 4vh 4vh 0 0;
+  position: relative;
+}
+.container header .left .box-border::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: -15px;
+  position: absolute;
+  background-color: aqua;
+}
+.container header .left .box-border .border {
+  width: 35px;
+  height: 20px;
+  background-color: aqua;
+  border-radius: 4vh;
+  border: 7px solid black;
+}
+.container header .left .box-hidden {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container header .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+}
+.container header .right ul {
+  gap: 20px;
+  display: none;
+  justify-content: space-between;
+  list-style: none;
+}
+@media screen and (min-width: 640px) {
+  .container header .right ul {
+    display: flex;
+  }
+}
+.container header .right ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 20px;
+}
+.container header .right ul li a:hover {
+  background-color: white;
+  color: black;
+}
+.container header .right ul .log-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+.container header .right ul .log-in a {
+  color: black;
+  text-decoration: none;
+}
+.container header .right a.menu {
+  font-size: 1.2rem;
+  padding: 0 20px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  .container header .right a.menu {
+    display: none;
+  }
+}
+.container section#top {
+  display: flex;
+  width: 100%;
+  background-color: aqua;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0 7vh 7vh 7vh;
+}
+.container section#top .left-side {
+  color: black;
+  padding: 20px 50px;
+  width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .container section#top .left-side {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container section#top .left-side .title {
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 4.5rem;
+}
+.container section#top .left-side .discription {
+  font-weight: 400;
+}
+.container section#top .left-side .warp-box {
+  display: flex;
+  padding-top: 20px;
+}
+.container section#top .left-side .warp-box .box {
+  text-align: center;
+  padding: 5px;
+  width: 140px;
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  font-size: 1.3rem;
+}
+.container section#top .left-side .warp-box .box:hover {
+  color: black;
+  background-color: white;
+}
+.container section#top .left-side .warp-box .box a {
+  color: white;
+  text-decoration: none;
+}
+.container section#top .left-side .warp-box .box a:hover {
+  display: block;
+  color: black;
+}
+.container section#top .left-side .warp-box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  background-color: white;
+  rotate: 45deg;
+}
+.container section#top .left-side .warp-box .icon:hover {
+  background-color: black;
+  color: white;
+}
+.container section#top .right-side {
+  display: none;
+  width: 30%;
+  flex-direction: row;
+}
+@media screen and (min-width: 1024px) {
+  .container section#top .right-side {
+    display: flex;
+  }
+}
+.container section#top .right-side .img {
+  display: flex;
+  width: 100%;
+}
+.container section#top .right-side .img img {
+  width: 600px;
+}
+.container section#hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 15px;
+}
+.container section#hero .warp-card {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 640px) {
+  .container section#hero .warp-card {
+    flex-direction: row;
+  }
+}
+.container section#hero .warp-card .box {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  border-radius: 7vh;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 640px) {
+  .container section#hero .warp-card .box {
+    width: 33%;
+  }
+}
+.container section#hero .warp-card .card {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(217, 189, 168);
+}
+.container section#hero .warp-card .card .left {
+  display: flex;
+}
+.container section#hero .warp-card .card .left img {
+  width: 400px;
+  transform: translate(0px, 11px);
+}
+.container section#hero .warp-card .card .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-direction: row;
+  color: black;
+  width: 30px;
+  height: 30px;
+  rotate: 45deg;
+  background-color: white;
+}
+.container section#hero .warp-card .card2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(218, 183, 203);
+  padding: 30px;
+}
+.container section#hero .warp-card .card2 .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.container section#hero .warp-card .card2 .header .border {
+  width: 40px;
+  height: 20px;
+  border-radius: 4vh;
+  border: 6px solid black;
+  display: flex;
+}
+.container section#hero .warp-card .card2 .header .icon {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.container section#hero .warp-card .card2 .discription {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.container section#hero .warp-card .card2 .content {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+}
+.container section#hero .warp-card .card2 .content .warp-link {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.container section#hero .warp-card .card2 .content .warp-link a {
+  text-decoration: none;
+  color: black;
+}
+.container section#hero .warp-card .card2 .content .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  background-color: black;
+  color: white;
+  rotate: 45deg;
+  border-radius: 20px;
+}
+.container section#hero .warp-card .card2 .avatar-warp {
+  display: flex;
+  gap: 60px;
+}
+.container section#hero .warp-card .card2 .avatar-warp .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section#hero .warp-card .card2 .avatar-warp .left .avatar {
+  display: flex;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.container section#hero .warp-card .card2 .avatar-warp .left .user {
+  border: 4px solid white;
+}
+.container section#hero .warp-card .card2 .avatar-warp .left .user1 {
+  transform: translateX(-10px);
+  border: 4px solid white;
+}
+.container section#hero .warp-card .card2 .avatar-warp .left .user2 {
+  transform: translateX(-20px);
+  border: 4px solid white;
+}
+.container section#hero .warp-card .card2 .avatar-warp .right {
+  display: flex;
+}
+.container section#hero .warp-card .card2 .avatar-warp .right span b {
+  font-size: 2rem;
+}
+.container section#hero .warp-card .card2 .avatar-warp .right span p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.container section#hero .warp-card .card3 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(183, 191, 254);
+}
+.container section#hero .warp-card .card3 .top-card3 {
+  display: flex;
+}
+.container section#hero .warp-card .card3 .top-card3 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 20px 0 20px 0px;
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+  padding: 30px;
+}
+.container section#hero .warp-card .card3 .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+}
+.container section#hero .warp-card .card3 .box-warp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.container section#hero .warp-card .card3 .box-warp .top-oval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 20px;
+}
+.container section#hero .warp-card .card3 .box-warp .top-oval .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.container section#hero .warp-card .card3 .box-warp .top-oval .oval2 {
+  background-color: black;
+  color: white;
+}
+.container section#hero .warp-card .card3 .box-warp .middle-oval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 20px;
+}
+.container section#hero .warp-card .card3 .box-warp .middle-oval .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.container section#hero .warp-card .card3 .box-warp .middle-oval .oval {
+  background-color: black;
+  color: white;
+}
+.container section#hero .warp-card .card3 .box-warp .bottom-oval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 20px;
+}
+.container section#hero .warp-card .card3 .box-warp .bottom-oval .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.container section#hero .warp-card .card3 .box-warp .bottom-oval .oval2 {
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
