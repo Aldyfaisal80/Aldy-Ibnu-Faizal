@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- JS -->
+    <script src="./src/js/app.js" defer></script>
+    <title>Disorganized</title>
+  </head>
+
+  <body class="font-poppins">
+    <div
+      class="bg-black w-full h-[100vh] bg-no-repeat bg-cover flex justify-center items-center text-white"
+      style="background-image: url(./public/assets/image/bg.svg)"
+    >
+      <!-- Card Login -->
+      <div
+        class="bg-black bg-opacity-[0.9] w-[25%] h-[80%] flex flex-col justify-center items-center rounded-[2vh]"
+      >
+        <!-- User PNG -->
+        <div class="border-2 border-gray-700 border-double rounded-full p-1">
+          <div
+            class="w-[100px] h-[100px] rounded-full bg-center bg-cover"
+            style="background-image: url(./public/assets/image/bio.jpg)"
+          ></div>
+        </div>
+        <div class="flex flex-col justify-center items-center pt-7 gap-2">
+          <span class="text-3xl font-bold">Sign Up</span>
+          <span class="text-gray-500">Enter your credentials</span>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center pt-7 gap-5 w-full"
+        >
+          <!-- INPUT -->
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            value="aldy@gmail.com"
+            class="bg-[#221c27] p-[10px] w-[90%] rounded-[1vh]"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            class="bg-[#221c27] p-[10px] w-[90%] rounded-[1vh]"
+          />
+        </div>
+        <!-- Bar Indicator -->
+        <div class="bars w-[90%] h-[10px] bg-[#221c27] my-6"></div>
+        <div></div>
+        <!-- BUTTON -->
+        <button
+          class="bg-white text-black w-[90%] rounded-[1vh] p-3 text-xl font-bold"
+          type="button"
+        >
+          JOIN NOW
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
