@@ -1,8 +1,3 @@
-# Let's create the README.md file with the provided content.
-
-readme_content = """
-# Aldy Ibnu Faizal
-
 This repository contains various web development projects and code samples by Aldy Ibnu Faizal.
 
 ## Technologies Used
