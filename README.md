@@ -1,27 +1,34 @@
-Aldy Ibnu Faizal
+# Let's create the README.md file with the provided content.
+
+readme_content = """
+# Aldy Ibnu Faizal
+
 This repository contains various web development projects and code samples by Aldy Ibnu Faizal.
 
-Technologies Used
-HTML
-SCSS
-CSS
-JavaScript
-Getting Started
+## Technologies Used
+
+- **HTML**
+- **SCSS**
+- **CSS**
+- **JavaScript**
+
+## Getting Started
+
 To get a local copy up and running, follow these steps:
 
-Clone the repository:
-sh
-Salin kode
-git clone https://github.com/Aldyfaisal80/Aldy-Ibnu-Faizal.git
-Navigate to the project directory:
-sh
-Salin kode
-cd Aldy-Ibnu-Faizal
-Usage
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/Aldyfaisal80/Aldy-Ibnu-Faizal.git
+    ```
+2. **Navigate to the project directory:**
+    ```sh
+    cd Aldy-Ibnu-Faizal
+    ```
+
+## Usage
+
 Open the project files in your preferred web browser to view and interact with the web pages.
 
-Contributions
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+## License
 
-License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
