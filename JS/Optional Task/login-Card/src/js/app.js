@@ -11,15 +11,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// function evaluatePasswordStrength(password) {
+//   if (password.length <= 6) {
+//     return "Weak";
+//   } else if (password.length < 10) {
+//     return "Medium";
+//   } else {
+//     return "Strong";
+//   }
+// }
+
 function evaluatePasswordStrength(password) {
-  if (password.length < 6) {
-    return "Weak";
-  } else if (password.length < 10) {
-    return "Medium";
+  var number = "1234567890";
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+  var unique = "!@#$%^&*()";
+  if (password.length <= 6) {
+    if (password.includes(lowercase) || password.includes(number) || password.includes(uppercase)) {
+      return "Weak";
+    }
+  } else if (password.length < 10) { 
+    if (password.includes(lowercase) || password.includes(number) || password.includes(uppercase) || password.includes(unique)) {
+      return "Medium";
+    }
   } else {
     return "Strong";
   }
 }
+
 
 function updateIndicator(strength) {
   const indicator = document.getElementById("indicator-password");
